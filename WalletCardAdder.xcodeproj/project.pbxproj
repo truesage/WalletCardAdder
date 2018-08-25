@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
+		DD181C75213158BA00588B59 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD181C74213158BA00588B59 /* String+Crypto.swift */; };
 		E30A308B21312D0F00E91D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30A308921312D0F00E91D17 /* Main.storyboard */; };
 		E30A308D21312D0F00E91D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30A308C21312D0F00E91D17 /* Assets.xcassets */; };
 		E30A309021312D0F00E91D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30A308E21312D0F00E91D17 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42F45201AE59A489E6C54CF /* Pods-WalletCardAdder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCardAdder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletCardAdder/Pods-WalletCardAdder.debug.xcconfig"; sourceTree = "<group>"; };
+		DD181C6C2131582900588B59 /* WalletCardAdder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WalletCardAdder-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD181C74213158BA00588B59 /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		E30A308221312D0F00E91D17 /* WalletCardAdder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletCardAdder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30A308A21312D0F00E91D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E30A308C21312D0F00E91D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +60,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DD181C6B2131580000588B59 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				DD181C6C2131582900588B59 /* WalletCardAdder-Bridging-Header.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		DD181C73213158AA00588B59 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DD181C76213158D400588B59 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DD181C76213158D400588B59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD181C74213158BA00588B59 /* String+Crypto.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E30A307921312D0F00E91D17 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +105,7 @@
 		E30A308421312D0F00E91D17 /* WalletCardAdder */ = {
 			isa = PBXGroup;
 			children = (
+				DD181C6B2131580000588B59 /* Bridge */,
 				E30A30A421312F0400E91D17 /* WalletCardAdder.entitlements */,
 				E30A309821312DF600E91D17 /* Sources */,
 				E30A309721312DF600E91D17 /* Views */,
@@ -99,6 +127,7 @@
 		E30A309821312DF600E91D17 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DD181C73213158AA00588B59 /* Common */,
 				E30A309921312DF600E91D17 /* Base */,
 				E30A30A121312E0500E91D17 /* Controllsers */,
 				E30A30AA213139D700E91D17 /* AppDelegate.swift */,
@@ -165,6 +194,7 @@
 				TargetAttributes = {
 					E30A308121312D0F00E91D17 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Wallet = {
@@ -232,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30A30AB213139D700E91D17 /* AppDelegate.swift in Sources */,
+				DD181C75213158BA00588B59 /* String+Crypto.swift in Sources */,
 				E30A30A321312E2800E91D17 /* MainViewController.swift in Sources */,
 				E30A309E21312DF700E91D17 /* BaseViewController.swift in Sources */,
 				E30A309F21312DF700E91D17 /* BaseViewProtocol.swift in Sources */,
@@ -372,6 +403,7 @@
 			baseConfigurationReference = C42F45201AE59A489E6C54CF /* Pods-WalletCardAdder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WalletCardAdder/WalletCardAdder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TUR386524;
@@ -380,6 +412,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilefactory.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WalletCardAdder/Bridge/WalletCardAdder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +424,7 @@
 			baseConfigurationReference = F89307271FD88A0CD17C7A73 /* Pods-WalletCardAdder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WalletCardAdder/WalletCardAdder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TUR386524;
@@ -398,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilefactory.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WalletCardAdder/Bridge/WalletCardAdder-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
