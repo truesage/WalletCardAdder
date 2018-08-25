@@ -33,12 +33,12 @@ class MainViewController: BaseViewController {
      }
      */
     @IBAction func goToHistodyAction(_ sender: Any) {
-        let vc = HistoryViewController.init(nibName: "HistoryViewController", bundle: nil) as! HistoryViewController
+        let vc = HistoryViewController.init(nibName: "HistoryViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func addCardAction(_ sender: Any) {
-        let vc = TrmplateSelectViewController.init(nibName: "TrmplateSelectViewController", bundle: nil) as! TrmplateSelectViewController
+        let vc = TrmplateSelectViewController.init(nibName: "TrmplateSelectViewController", bundle: nil)
         self.present(vc, animated: true, completion: nil)
     }
 }

@@ -23,6 +23,8 @@
 		04BCC4C82131A2EA00ED753D /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */; };
 		04BCC4C92131A2EA00ED753D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */; };
 		04BCC4CC2131C9CC00ED753D /* AddInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */; };
+		04BCC4CF2131D7B800ED753D /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4CD2131D7B800ED753D /* IconCollectionViewCell.swift */; };
+		04BCC4D02131D7B800ED753D /* IconCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4CE2131D7B800ED753D /* IconCollectionViewCell.xib */; };
 		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
 		6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BD2131CA9800732E61 /* CouponPass.swift */; };
 		6FB013C12131CA9800732E61 /* PassBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BE2131CA9800732E61 /* PassBook.swift */; };
@@ -81,6 +83,8 @@
 		04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInformationViewController.swift; sourceTree = "<group>"; };
+		04BCC4CD2131D7B800ED753D /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
+		04BCC4CE2131D7B800ED753D /* IconCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconCollectionViewCell.xib; sourceTree = "<group>"; };
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB013BD2131CA9800732E61 /* CouponPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponPass.swift; sourceTree = "<group>"; };
 		6FB013BE2131CA9800732E61 /* PassBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassBook.swift; sourceTree = "<group>"; };
@@ -410,6 +414,8 @@
 				04BCC4B22131A2E900ED753D /* TemplateSelectViewController.xib */,
 				04BCC4AB2131A2E800ED753D /* TrmplateSelectViewController.xib */,
 				DDBA7DFE21317EF90004ED5B /* Main.storyboard */,
+				04BCC4CD2131D7B800ED753D /* IconCollectionViewCell.swift */,
+				04BCC4CE2131D7B800ED753D /* IconCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				04BCC4C32131A2EA00ED753D /* TemplateSelectViewController.xib in Resources */,
 				04BCC4BC2131A2EA00ED753D /* TrmplateSelectViewController.xib in Resources */,
 				04BCC4C82131A2EA00ED753D /* HistoryTableViewCell.xib in Resources */,
+				04BCC4D02131D7B800ED753D /* IconCollectionViewCell.xib in Resources */,
 				04BCC4C02131A2EA00ED753D /* TemplateCollectionViewCell.xib in Resources */,
 				DDBA7DFF21317EF90004ED5B /* Main.storyboard in Resources */,
 				E30A309021312D0F00E91D17 /* LaunchScreen.storyboard in Resources */,
@@ -586,6 +593,7 @@
 				DD181C75213158BA00588B59 /* String+Crypto.swift in Sources */,
 				DDBA7EA021317FA10004ED5B /* MIHSecureHashAlgorithm512.m in Sources */,
 				04BCC4C72131A2EA00ED753D /* GreenCardViewController.swift in Sources */,
+				04BCC4CF2131D7B800ED753D /* IconCollectionViewCell.swift in Sources */,
 				04BCC4BB2131A2EA00ED753D /* HistoryViewController.swift in Sources */,
 				DDBA7E9D21317FA10004ED5B /* MIHMessageDigest5.m in Sources */,
 				DDBA7EAD21317FA10004ED5B /* MIHBigInteger+Internal.m in Sources */,
