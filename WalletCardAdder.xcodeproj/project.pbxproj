@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
 		E30A308B21312D0F00E91D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30A308921312D0F00E91D17 /* Main.storyboard */; };
 		E30A308D21312D0F00E91D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30A308C21312D0F00E91D17 /* Assets.xcassets */; };
 		E30A309021312D0F00E91D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30A308E21312D0F00E91D17 /* LaunchScreen.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42F45201AE59A489E6C54CF /* Pods-WalletCardAdder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCardAdder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletCardAdder/Pods-WalletCardAdder.debug.xcconfig"; sourceTree = "<group>"; };
 		E30A308221312D0F00E91D17 /* WalletCardAdder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletCardAdder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30A308A21312D0F00E91D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E30A308C21312D0F00E91D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		E30A30A421312F0400E91D17 /* WalletCardAdder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalletCardAdder.entitlements; sourceTree = "<group>"; };
 		E30A30A621312F0400E91D17 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		E30A30AA213139D700E91D17 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F89307271FD88A0CD17C7A73 /* Pods-WalletCardAdder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCardAdder.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletCardAdder/Pods-WalletCardAdder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,18 +41,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30A30A721312F0400E91D17 /* PassKit.framework in Frameworks */,
+				23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		727794501B8FD9D736F4FB45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C42F45201AE59A489E6C54CF /* Pods-WalletCardAdder.debug.xcconfig */,
+				F89307271FD88A0CD17C7A73 /* Pods-WalletCardAdder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E30A307921312D0F00E91D17 = {
 			isa = PBXGroup;
 			children = (
 				E30A308421312D0F00E91D17 /* WalletCardAdder */,
 				E30A308321312D0F00E91D17 /* Products */,
 				E30A30A521312F0400E91D17 /* Frameworks */,
+				727794501B8FD9D736F4FB45 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E30A30A621312F0400E91D17 /* PassKit.framework */,
+				1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +139,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E30A309421312D0F00E91D17 /* Build configuration list for PBXNativeTarget "WalletCardAdder" */;
 			buildPhases = (
+				5B0329BF7EF25B758552BD4B /* [CP] Check Pods Manifest.lock */,
 				E30A307E21312D0F00E91D17 /* Sources */,
 				E30A307F21312D0F00E91D17 /* Frameworks */,
 				E30A308021312D0F00E91D17 /* Resources */,
@@ -187,6 +204,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B0329BF7EF25B758552BD4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletCardAdder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E30A307E21312D0F00E91D17 /* Sources */ = {
@@ -331,6 +369,7 @@
 		};
 		E30A309521312D0F00E91D17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42F45201AE59A489E6C54CF /* Pods-WalletCardAdder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WalletCardAdder/WalletCardAdder.entitlements;
@@ -348,6 +387,7 @@
 		};
 		E30A309621312D0F00E91D17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F89307271FD88A0CD17C7A73 /* Pods-WalletCardAdder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WalletCardAdder/WalletCardAdder.entitlements;
