@@ -18,6 +18,9 @@ class PassBook : Codable, JSONable {
     var backgroundColor: String?
     var logoText: String?
     var barcode: Barcode?
+    var serialNumber: String?
+    var webServiceURL: String?
+    var authenticationToken: String?
     
     private enum CodingKeys: String, CodingKey {
         case formatVersion
@@ -29,6 +32,9 @@ class PassBook : Codable, JSONable {
         case backgroundColor
         case logoText
         case barcode
+        case serialNumber
+        case webServiceURL
+        case authenticationToken
     }
     
     init() {
@@ -45,6 +51,9 @@ class PassBook : Codable, JSONable {
         backgroundColor = try container.decode(String.self, forKey: .backgroundColor)
         logoText = try container.decode(String.self, forKey: .logoText)
         barcode = try container.decode(Barcode.self, forKey: .barcode)
+        serialNumber = try container.decode(String.self, forKey: .serialNumber)
+        webServiceURL = try container.decode(String.self, forKey: .webServiceURL)
+        authenticationToken = try container.decode(String.self, forKey: .authenticationToken)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -58,6 +67,9 @@ class PassBook : Codable, JSONable {
         try container.encode(backgroundColor, forKey: .backgroundColor)
         try container.encode(logoText, forKey: .logoText)
         try container.encode(barcode, forKey: .barcode)
+        try container.encode(serialNumber, forKey: .serialNumber)
+        try container.encode(webServiceURL, forKey: .webServiceURL)
+        try container.encode(authenticationToken, forKey: .authenticationToken)
     }
 }
 
