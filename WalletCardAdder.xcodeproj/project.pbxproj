@@ -26,6 +26,8 @@
 		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
 		6F8C94072131D10D00ABB6AF /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C94062131D10D00ABB6AF /* Barcode.swift */; };
 		6F8C94092131D99B00ABB6AF /* StorePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C94082131D99B00ABB6AF /* StorePass.swift */; };
+		6F8C940B2131E0D000ABB6AF /* ManifestJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C940A2131E0D000ABB6AF /* ManifestJSON.swift */; };
+		6F8C940D2131EE2D00ABB6AF /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C940C2131EE2D00ABB6AF /* NSData+Crypto.swift */; };
 		6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BD2131CA9800732E61 /* CouponPass.swift */; };
 		6FB013C12131CA9800732E61 /* PassBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BE2131CA9800732E61 /* PassBook.swift */; };
 		6FB013C22131CA9800732E61 /* PassBook+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */; };
@@ -86,6 +88,8 @@
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8C94062131D10D00ABB6AF /* Barcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
 		6F8C94082131D99B00ABB6AF /* StorePass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePass.swift; sourceTree = "<group>"; };
+		6F8C940A2131E0D000ABB6AF /* ManifestJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestJSON.swift; sourceTree = "<group>"; };
+		6F8C940C2131EE2D00ABB6AF /* NSData+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+Crypto.swift"; sourceTree = "<group>"; };
 		6FB013BD2131CA9800732E61 /* CouponPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponPass.swift; sourceTree = "<group>"; };
 		6FB013BE2131CA9800732E61 /* PassBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassBook.swift; sourceTree = "<group>"; };
 		6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PassBook+JSON.swift"; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 			children = (
 				6FB013AE2131AD1300732E61 /* PassBook */,
 				DD181C76213158D400588B59 /* Extensions */,
+				6F8C940A2131E0D000ABB6AF /* ManifestJSON.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				DD181C74213158BA00588B59 /* String+Crypto.swift */,
+				6F8C940C2131EE2D00ABB6AF /* NSData+Crypto.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -579,6 +585,7 @@
 				6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */,
 				04BCC4BF2131A2EA00ED753D /* TemplateCollectionViewCell.swift in Sources */,
 				6F8C94072131D10D00ABB6AF /* Barcode.swift in Sources */,
+				6F8C940D2131EE2D00ABB6AF /* NSData+Crypto.swift in Sources */,
 				DDBA7EA321317FA10004ED5B /* NSString+MIHConversion.m in Sources */,
 				04BCC4C52131A2EA00ED753D /* TrmplateSelectViewController.swift in Sources */,
 				DDBA7EAB21317FA10004ED5B /* MIHBigInteger+Factory.m in Sources */,
@@ -614,6 +621,7 @@
 				DDBA7EA921317FA10004ED5B /* MIHAESKeyFactory.m in Sources */,
 				DDBA7EAC21317FA10004ED5B /* MIHBigIntegerRange.m in Sources */,
 				DDBA7EB521317FA10004ED5B /* MIHErrors.m in Sources */,
+				6F8C940B2131E0D000ABB6AF /* ManifestJSON.swift in Sources */,
 				DDBA7E9E21317FA10004ED5B /* MIHSecureHashAlgorithm256.m in Sources */,
 				E30A309F21312DF700E91D17 /* BaseViewProtocol.swift in Sources */,
 			);
