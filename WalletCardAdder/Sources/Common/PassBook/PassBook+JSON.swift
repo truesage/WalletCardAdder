@@ -1,38 +1,27 @@
 //
-//  JsonBuilder.swift
-//  WalletCardAdder
+//  PassBook+JSON.swift
+//  playground
 //
-//  Created by 김상선 on 2018. 8. 25..
-//  Copyright © 2018년 TrueSage. All rights reserved.
+//  Created by 김상선 on 2018. 8. 26..
+//  Copyright © 2018년 김상선. All rights reserved.
 //
 
 import Foundation
 
-class JsonBuilder {
+protocol JSONable { }
+
+extension JSONable where Self: PassBook {
     
-    var contentDict: [String:Any]
-    
-    init() {
-        self.contentDict = [:]
-    }
-    
-    private func toString(dict: [String:Any]) -> String? {
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
-            return String(data: jsonData, encoding: String.Encoding.utf8)
-        } catch {
-            print(error.localizedDescription)
+    func toJSONString() -> String? {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        
+        let json = try? encoder.encode(self)
+        
+        if let jsonData = json, let jsonString = String(data: jsonData, encoding: .utf8) {
+            return jsonString
         }
-        return nil
-    }
-    
-    func toJsonString() -> String? {
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: self.contentDict, options: .prettyPrinted)
-            return String(data: jsonData, encoding: String.Encoding.utf8)
-        } catch {
-            print(error.localizedDescription)
-        }
+        
         return nil
     }
     
@@ -51,9 +40,9 @@ class JsonBuilder {
             }
             
             // json string을 해당위치에 파일로 저장
-            let fileURL = fileDirURL.appendingPathComponent(filename)
+            let fileURL = fileDirURL.appendingPathComponent("\(filename).json")
             do {
-                if let jsonStr = self.toJsonString() {
+                if let jsonStr = self.toJSONString() {
                     try jsonStr.write(to: fileURL, atomically: false, encoding: .utf8)
                 }
             } catch {

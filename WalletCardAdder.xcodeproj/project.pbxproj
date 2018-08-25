@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
-		6FB0139A21315DD800732E61 /* PassJsonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0139921315DD800732E61 /* PassJsonBuilder.swift */; };
-		6FB013A021317ED500732E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB0139F21317ED300732E61 /* Main.storyboard */; };
-		6FB013A321318A8400732E61 /* CouponJsonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013A221318A8400732E61 /* CouponJsonBuilder.swift */; };
-		6FB013A521318B3900732E61 /* JsonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013A421318B3900732E61 /* JsonBuilder.swift */; };
+		6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BD2131CA9800732E61 /* CouponPass.swift */; };
+		6FB013C12131CA9800732E61 /* PassBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BE2131CA9800732E61 /* PassBook.swift */; };
+		6FB013C22131CA9800732E61 /* PassBook+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */; };
 		DD181C75213158BA00588B59 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD181C74213158BA00588B59 /* String+Crypto.swift */; };
 		DDBA7DFF21317EF90004ED5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBA7DFE21317EF90004ED5B /* Main.storyboard */; };
 		DDBA7E9D21317FA10004ED5B /* MIHMessageDigest5.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7E5D21317FA10004ED5B /* MIHMessageDigest5.m */; };
@@ -50,10 +49,9 @@
 
 /* Begin PBXFileReference section */
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FB0139921315DD800732E61 /* PassJsonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassJsonBuilder.swift; sourceTree = "<group>"; };
-		6FB0139F21317ED300732E61 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		6FB013A221318A8400732E61 /* CouponJsonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponJsonBuilder.swift; sourceTree = "<group>"; };
-		6FB013A421318B3900732E61 /* JsonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonBuilder.swift; sourceTree = "<group>"; };
+		6FB013BD2131CA9800732E61 /* CouponPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponPass.swift; sourceTree = "<group>"; };
+		6FB013BE2131CA9800732E61 /* PassBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassBook.swift; sourceTree = "<group>"; };
+		6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PassBook+JSON.swift"; sourceTree = "<group>"; };
 		C42F45201AE59A489E6C54CF /* Pods-WalletCardAdder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCardAdder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletCardAdder/Pods-WalletCardAdder.debug.xcconfig"; sourceTree = "<group>"; };
 		DD181C6C2131582900588B59 /* WalletCardAdder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WalletCardAdder-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD181C74213158BA00588B59 /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
@@ -141,14 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6FB013A121318A5F00732E61 /* Json */ = {
+		6FB013AE2131AD1300732E61 /* PassBook */ = {
 			isa = PBXGroup;
 			children = (
-				6FB013A421318B3900732E61 /* JsonBuilder.swift */,
-				6FB0139921315DD800732E61 /* PassJsonBuilder.swift */,
-				6FB013A221318A8400732E61 /* CouponJsonBuilder.swift */,
+				6FB013BD2131CA9800732E61 /* CouponPass.swift */,
+				6FB013BE2131CA9800732E61 /* PassBook.swift */,
+				6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */,
 			);
-			path = Json;
+			path = PassBook;
 			sourceTree = "<group>";
 		};
 		727794501B8FD9D736F4FB45 /* Pods */ = {
@@ -171,7 +169,7 @@
 		DD181C73213158AA00588B59 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				6FB013A121318A5F00732E61 /* Json */,
+				6FB013AE2131AD1300732E61 /* PassBook */,
 				DD181C76213158D400588B59 /* Extensions */,
 			);
 			path = Common;
@@ -499,10 +497,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB013C22131CA9800732E61 /* PassBook+JSON.swift in Sources */,
 				DDBA7EAE21317FA10004ED5B /* MIHBigInteger.m in Sources */,
 				E30A30AB213139D700E91D17 /* AppDelegate.swift in Sources */,
-				6FB013A321318A8400732E61 /* CouponJsonBuilder.swift in Sources */,
 				DDBA7EA221317FA10004ED5B /* MIHCryptoConfiguration.m in Sources */,
+				6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */,
 				DDBA7EA321317FA10004ED5B /* NSString+MIHConversion.m in Sources */,
 				DDBA7EAB21317FA10004ED5B /* MIHBigInteger+Factory.m in Sources */,
 				DDBA7EAF21317FA10004ED5B /* MIHRSAPrivateKey.m in Sources */,
@@ -510,6 +509,7 @@
 				DDBA7EAA21317FA10004ED5B /* MIHAESKey.m in Sources */,
 				DDBA7EA421317FA10004ED5B /* MIHInternal.m in Sources */,
 				DDBA7EB321317FA10004ED5B /* MIHRSAPublicKey+Internal.m in Sources */,
+				6FB013C12131CA9800732E61 /* PassBook.swift in Sources */,
 				DDBA7EA121317FA10004ED5B /* MIHSecureHashAlgorithm.m in Sources */,
 				DDBA7EB121317FA10004ED5B /* MIHRSAPublicKey.m in Sources */,
 				DD181C75213158BA00588B59 /* String+Crypto.swift in Sources */,
@@ -519,8 +519,6 @@
 				DDBA7EA721317FA10004ED5B /* MIHDESKey.m in Sources */,
 				E30A30A321312E2800E91D17 /* MainViewController.swift in Sources */,
 				E30A309E21312DF700E91D17 /* BaseViewController.swift in Sources */,
-				6FB013A521318B3900732E61 /* JsonBuilder.swift in Sources */,
-				6FB0139A21315DD800732E61 /* PassJsonBuilder.swift in Sources */,
 				DDBA7EB221317FA10004ED5B /* MIHRSAKeyFactory.m in Sources */,
 				DDBA7E9F21317FA10004ED5B /* MIHSecureHashAlgorithm384.m in Sources */,
 				DDBA7EB021317FA10004ED5B /* MIHRSAPrivateKey+Internal.m in Sources */,
