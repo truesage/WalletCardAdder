@@ -589,11 +589,8 @@
 				04BCC4BB2131A2EA00ED753D /* HistoryViewController.swift in Sources */,
 				DDBA7E9D21317FA10004ED5B /* MIHMessageDigest5.m in Sources */,
 				DDBA7EAD21317FA10004ED5B /* MIHBigInteger+Internal.m in Sources */,
-<<<<<<< Updated upstream
 				04BCC4C42131A2EA00ED753D /* TemplateSelectViewController.swift in Sources */,
-=======
 				DDBA7EBD21319B440004ED5B /* SmimeWrapper.m in Sources */,
->>>>>>> Stashed changes
 				DDBA7EA721317FA10004ED5B /* MIHDESKey.m in Sources */,
 				04BCC4C62131A2EA00ED753D /* RedCardViewController.swift in Sources */,
 				E30A30A321312E2800E91D17 /* MainViewController.swift in Sources */,
