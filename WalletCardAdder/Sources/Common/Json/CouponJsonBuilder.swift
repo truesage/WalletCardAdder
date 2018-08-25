@@ -13,6 +13,10 @@ let kAuxiliaryFields = "auxiliaryFields"
 
 class CouponJsonBuilder : JsonBuilder {
     
+    override init() {
+        super.init()
+    }
+    
     static func build() -> CouponJsonBuilder {
         return CouponJsonBuilder()
     }
