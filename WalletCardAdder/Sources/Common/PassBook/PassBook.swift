@@ -62,17 +62,17 @@ extension PassBook {
     func foregroundColor(r: Int, g: Int, b: Int) {
         var r = r
         if (r > 256) {
-            r = 0
+            r = 255
         }
         
         var g = g
         if (g > 256) {
-            g = 0
+            g = 255
         }
         
         var b = b
         if (b > 256) {
-            b = 0
+            b = 255
         }
         foregroundColor = "rgb(\(r), \(g), \(b))"
     }
@@ -80,17 +80,17 @@ extension PassBook {
     func backgroundColor(r: Int, g: Int, b: Int) {
         var r = r
         if (r > 256) {
-            r = 0
+            r = 255
         }
         
         var g = g
         if (g > 256) {
-            g = 0
+            g = 255
         }
         
         var b = b
         if (b > 256) {
-            b = 0
+            b = 255
         }
         backgroundColor = "rgb(\(r), \(g), \(b))"
     }
