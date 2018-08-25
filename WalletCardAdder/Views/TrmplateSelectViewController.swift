@@ -50,7 +50,6 @@ class TrmplateSelectViewController: UIViewController,UICollectionViewDataSource 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reUseIdentifier, for: indexPath) as! TemplateCollectionViewCell
         cell.imageView.image = UIImage(named: self.cardList[indexPath.item])
-        cell.backgroundColor = .green
         return cell
     }
     

@@ -28,13 +28,12 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
         picker.delegate = self
         picker.sourceType = .photoLibrary
         picker.allowsEditing = true
-        
+        self.contentTitleLabel.isUserInteractionEnabled = true
         self.contentLabel.isUserInteractionEnabled = true
-//        self.subContentLabel.isUserInteractionEnabled = true
         self.productNameLabel.isUserInteractionEnabled = true
         self.contentLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeContent)))
-        self.contentTitleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changSubContent)))
-        self.productNameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeDate)))
+        self.contentTitleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeContentTitle)))
+        self.productNameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeProductName)))
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -91,13 +90,13 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
     
     @IBAction func addCardAction(_ sender: UIButton) {
     }
-    @objc func changeDate(){
+    @objc func changeProductName(){
      self.getChangedText(productNameLabel)
     }
     @objc func changeContent(){
         self.getChangedText(contentLabel)
     }
-    @objc func changSubContent(){
+    @objc func changeContentTitle(){
         self.getChangedText(contentTitleLabel)
     }
     func getChangedText(_ label: UILabel){
@@ -110,5 +109,8 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
         }
         alert.addAction(okAction)
         self.present(alert,animated: true)
+    }
+    @IBAction func closeAction(){
+        self.dismiss(animated: false, completion: nil)
     }
 }

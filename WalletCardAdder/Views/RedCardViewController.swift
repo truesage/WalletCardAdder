@@ -107,5 +107,10 @@ class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UI
         alert.addAction(okAction)
         self.present(alert,animated: true)
     }
-
+    @IBAction func closeAction(){
+        self.dismiss(animated: false, completion: nil)
+    }
+    @IBAction func addProfileImage(){
+        print("프로필 이미지 구현 예정")
+    }
 }
