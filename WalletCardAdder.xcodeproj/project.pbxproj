@@ -22,7 +22,6 @@
 		04BCC4C72131A2EA00ED753D /* GreenCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4B62131A2E900ED753D /* GreenCardViewController.swift */; };
 		04BCC4C82131A2EA00ED753D /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */; };
 		04BCC4C92131A2EA00ED753D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */; };
-		04BCC4CA2131A2EA00ED753D /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4B92131A2EA00ED753D /* Base.lproj */; };
 		04BCC4CC2131C9CC00ED753D /* AddInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */; };
 		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
 		6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BD2131CA9800732E61 /* CouponPass.swift */; };
@@ -80,7 +79,6 @@
 		04BCC4B62131A2E900ED753D /* GreenCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenCardViewController.swift; sourceTree = "<group>"; };
 		04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
-		04BCC4B92131A2EA00ED753D /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInformationViewController.swift; sourceTree = "<group>"; };
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB013BD2131CA9800732E61 /* CouponPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponPass.swift; sourceTree = "<group>"; };
@@ -390,7 +388,6 @@
 			isa = PBXGroup;
 			children = (
 				04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */,
-				04BCC4B92131A2EA00ED753D /* Base.lproj */,
 				04BCC4AD2131A2E900ED753D /* GreenCardViewController.xib */,
 				04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */,
 				04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */,
@@ -524,7 +521,6 @@
 				04BCC4C22131A2EA00ED753D /* HistoryViewController.xib in Resources */,
 				04BCC4BE2131A2EA00ED753D /* GreenCardViewController.xib in Resources */,
 				04BCC4C12131A2EA00ED753D /* RedCardViewController.xib in Resources */,
-				04BCC4CA2131A2EA00ED753D /* Base.lproj in Resources */,
 				E30A308D21312D0F00E91D17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
