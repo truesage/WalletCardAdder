@@ -28,9 +28,11 @@ class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UI
         self.nameLabel.isUserInteractionEnabled = true
         self.favoriteLabel.isUserInteractionEnabled = true
         self.dateLabel.isUserInteractionEnabled = true
+        self.gradeLabel.isUserInteractionEnabled = true
         self.nameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeContent)))
-        self.favoriteLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changSubContent)))
+        self.favoriteLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeSubContent)))
         self.dateLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeDate)))
+        self.gradeLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeGrade)))
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -93,8 +95,11 @@ class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @objc func changeContent(){
         self.getChangedText(nameLabel)
     }
-    @objc func changSubContent(){
+    @objc func changeSubContent(){
         self.getChangedText(favoriteLabel)
+    }
+    @objc func changeGrade(){
+        self.getChangedText(gradeLabel)
     }
     func getChangedText(_ label: UILabel){
         let alert = UIAlertController(title: "수정", message: "수정할 문자열을 입력하세요", preferredStyle: .alert)

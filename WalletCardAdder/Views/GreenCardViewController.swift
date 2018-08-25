@@ -14,7 +14,8 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
     
     @IBOutlet weak var titleContainerImageView: UIImageView!
     
-    
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var priceSubLabel: UILabel!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTitleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
@@ -28,9 +29,14 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
         picker.delegate = self
         picker.sourceType = .photoLibrary
         picker.allowsEditing = true
+        self.priceLabel.isUserInteractionEnabled = true
+        self.priceSubLabel.isUserInteractionEnabled = true
+        
         self.contentTitleLabel.isUserInteractionEnabled = true
         self.contentLabel.isUserInteractionEnabled = true
         self.productNameLabel.isUserInteractionEnabled = true
+        self.priceLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changePrice)))
+        self.priceSubLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changePriceSub)))
         self.contentLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeContent)))
         self.contentTitleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeContentTitle)))
         self.productNameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeProductName)))
@@ -89,6 +95,12 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
     }
     
     @IBAction func addCardAction(_ sender: UIButton) {
+    }
+    @objc func changePrice(){
+        self.getChangedText(priceLabel)
+    }
+    @objc func changePriceSub(){
+        self.getChangedText(priceSubLabel)
     }
     @objc func changeProductName(){
      self.getChangedText(productNameLabel)

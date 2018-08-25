@@ -18,6 +18,8 @@
                 <outlet property="contentLabel" destination="Lhq-ht-pab" id="ZBc-Fe-LUA"/>
                 <outlet property="contentTitleLabel" destination="wHm-N2-hVV" id="czh-lH-Pg4"/>
                 <outlet property="logoImageView" destination="2I3-iS-LOa" id="wS3-Js-Z3q"/>
+                <outlet property="priceLabel" destination="H6e-6E-wmx" id="4E0-M3-CGc"/>
+                <outlet property="priceSubLabel" destination="yIb-py-4ls" id="FEE-DQ-Gy7"/>
                 <outlet property="productNameLabel" destination="Lhq-ht-pab" id="anQ-zb-fkX"/>
                 <outlet property="titleContainerImageView" destination="BVq-iC-n8u" id="mBv-Zr-Cn9"/>
                 <outlet property="titleTextField" destination="Wrt-YM-nV8" id="amP-wK-72D"/>

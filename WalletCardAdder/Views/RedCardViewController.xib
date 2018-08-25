@@ -79,7 +79,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oj-9W-pbl">
-                            <rect key="frame" x="8" y="80" width="104" height="40"/>
+                            <rect key="frame" x="8" y="80" width="178.5" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="FWf-4M-Lry"/>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="104" id="tz6-Uz-4qi"/>
@@ -105,6 +105,7 @@
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u1L-63-XfG">
                             <rect key="frame" x="194.5" y="60" width="60" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="NnE-jv-Bzp"/>
                                 <constraint firstAttribute="width" constant="60" id="Zbn-Sj-bP7"/>
@@ -156,6 +157,7 @@
                         <constraint firstItem="Jr2-rl-hiW" firstAttribute="centerY" secondItem="JCH-nk-5qj" secondAttribute="centerY" constant="2" id="6Xr-a5-z3t"/>
                         <constraint firstItem="KD5-1d-PMz" firstAttribute="leading" secondItem="0P0-Up-wF9" secondAttribute="leading" constant="8" id="6yq-UT-77n"/>
                         <constraint firstItem="927-Dg-mD3" firstAttribute="leading" secondItem="0P0-Up-wF9" secondAttribute="leading" constant="8" id="8Q7-YF-vDs"/>
+                        <constraint firstItem="6wD-Um-1yt" firstAttribute="leading" secondItem="8Oj-9W-pbl" secondAttribute="trailing" constant="8" id="A9R-hx-5mt"/>
                         <constraint firstItem="DMc-mr-JEn" firstAttribute="height" secondItem="KD5-1d-PMz" secondAttribute="height" id="BbX-6J-YKh"/>
                         <constraint firstItem="JCH-nk-5qj" firstAttribute="centerX" secondItem="3yB-4h-U8z" secondAttribute="centerX" id="CGR-8E-DdU"/>
                         <constraint firstItem="3yB-4h-U8z" firstAttribute="leading" secondItem="0P0-Up-wF9" secondAttribute="leading" constant="8" id="CdC-cA-MaT"/>
