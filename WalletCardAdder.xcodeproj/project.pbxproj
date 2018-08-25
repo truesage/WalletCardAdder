@@ -24,6 +24,7 @@
 		04BCC4C92131A2EA00ED753D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */; };
 		04BCC4CC2131C9CC00ED753D /* AddInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */; };
 		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
+		6F8C94072131D10D00ABB6AF /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C94062131D10D00ABB6AF /* Barcode.swift */; };
 		6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BD2131CA9800732E61 /* CouponPass.swift */; };
 		6FB013C12131CA9800732E61 /* PassBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BE2131CA9800732E61 /* PassBook.swift */; };
 		6FB013C22131CA9800732E61 /* PassBook+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */; };
@@ -82,6 +83,7 @@
 		04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInformationViewController.swift; sourceTree = "<group>"; };
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8C94062131D10D00ABB6AF /* Barcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
 		6FB013BD2131CA9800732E61 /* CouponPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponPass.swift; sourceTree = "<group>"; };
 		6FB013BE2131CA9800732E61 /* PassBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassBook.swift; sourceTree = "<group>"; };
 		6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PassBook+JSON.swift"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				6FB013BD2131CA9800732E61 /* CouponPass.swift */,
 				6FB013BE2131CA9800732E61 /* PassBook.swift */,
 				6FB013BF2131CA9800732E61 /* PassBook+JSON.swift */,
+				6F8C94062131D10D00ABB6AF /* Barcode.swift */,
 			);
 			path = PassBook;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				DDBA7EA221317FA10004ED5B /* MIHCryptoConfiguration.m in Sources */,
 				6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */,
 				04BCC4BF2131A2EA00ED753D /* TemplateCollectionViewCell.swift in Sources */,
+				6F8C94072131D10D00ABB6AF /* Barcode.swift in Sources */,
 				DDBA7EA321317FA10004ED5B /* NSString+MIHConversion.m in Sources */,
 				04BCC4C52131A2EA00ED753D /* TrmplateSelectViewController.swift in Sources */,
 				DDBA7EAB21317FA10004ED5B /* MIHBigInteger+Factory.m in Sources */,

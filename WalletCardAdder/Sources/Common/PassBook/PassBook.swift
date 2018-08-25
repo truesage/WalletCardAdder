@@ -17,6 +17,7 @@ class PassBook : Codable, JSONable {
     var foregroundColor: String?
     var backgroundColor: String?
     var logoText: String?
+    var barcode: Barcode?
     
     private enum CodingKeys: String, CodingKey {
         case formatVersion
@@ -27,6 +28,7 @@ class PassBook : Codable, JSONable {
         case foregroundColor
         case backgroundColor
         case logoText
+        case barcode
     }
     
     init() {
@@ -42,6 +44,7 @@ class PassBook : Codable, JSONable {
         foregroundColor = try container.decode(String.self, forKey: .foregroundColor)
         backgroundColor = try container.decode(String.self, forKey: .backgroundColor)
         logoText = try container.decode(String.self, forKey: .logoText)
+        barcode = try container.decode(Barcode.self, forKey: .barcode)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -54,6 +57,7 @@ class PassBook : Codable, JSONable {
         try container.encode(foregroundColor, forKey: .foregroundColor)
         try container.encode(backgroundColor, forKey: .backgroundColor)
         try container.encode(logoText, forKey: .logoText)
+        try container.encode(barcode, forKey: .barcode)
     }
 }
 
