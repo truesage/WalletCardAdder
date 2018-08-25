@@ -9,7 +9,9 @@
 import UIKit
 
 class TrmplateSelectViewController: UIViewController,UICollectionViewDataSource {
+    // MARK: IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
+    // MARK: Internal Variables
     private let reUseIdentifier = "cardCell"
     let cardList: [String] = [
         "red",
@@ -40,7 +42,7 @@ class TrmplateSelectViewController: UIViewController,UICollectionViewDataSource 
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK: UICollectionView DataSource Methods
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -50,10 +52,9 @@ class TrmplateSelectViewController: UIViewController,UICollectionViewDataSource 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reUseIdentifier, for: indexPath) as! TemplateCollectionViewCell
         cell.imageView.image = UIImage(named: self.cardList[indexPath.item])
-        cell.backgroundColor = .green
         return cell
     }
-    
+    // MARK: Button Actions
     @IBAction func selectTemplate(_ sender: UIButton) {
         let selectedCard = self.cardList[collectionView.indexPathsForVisibleItems[0][1]]
         var vc: UIViewController!

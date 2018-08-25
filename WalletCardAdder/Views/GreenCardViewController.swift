@@ -9,32 +9,36 @@
 import UIKit
 
 class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    // MARK: IBOutlet
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var logoImageView: UIButton!
-    
     @IBOutlet weak var titleContainerImageView: UIImageView!
-    
-    
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var priceSubLabel: UILabel!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTitleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var barcodeImageView: UIImageView!
-//    @IBOutlet weak var dateLabel: UILabel!
     
+    // MARK: Internal Variable
     let picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
         picker.sourceType = .photoLibrary
         picker.allowsEditing = true
+        self.priceLabel.isUserInteractionEnabled = true
+        self.priceSubLabel.isUserInteractionEnabled = true
         
+        self.contentTitleLabel.isUserInteractionEnabled = true
         self.contentLabel.isUserInteractionEnabled = true
-//        self.subContentLabel.isUserInteractionEnabled = true
         self.productNameLabel.isUserInteractionEnabled = true
+        self.priceLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changePrice)))
+        self.priceSubLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changePriceSub)))
         self.contentLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeContent)))
-        self.contentTitleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changSubContent)))
-        self.productNameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeDate)))
+        self.contentTitleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeContentTitle)))
+        self.productNameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeProductName)))
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -44,9 +48,7 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
             self.view.layoutIfNeeded()
         }
     }
-    @IBAction func addBarcodeImageAction(_ sender: UIButton) {
-        self.present(self.picker, animated: true, completion: nil)
-    }
+    // MARK: Internal Methods
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
@@ -58,6 +60,17 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
         }
         
         self.getBarcodeFromImage(image)
+    }
+    func getChangedText(_ label: UILabel){
+        let alert = UIAlertController(title: "수정", message: "수정할 문자열을 입력하세요", preferredStyle: .alert)
+        alert.addTextField { (tf) in
+            tf.placeholder = "문자열 입력"
+        }
+        let okAction = UIAlertAction(title: "확인", style: .default) { (_) in
+            label.text = (alert.textFields?.first?.text!)!
+        }
+        alert.addAction(okAction)
+        self.present(alert,animated: true)
     }
     func getBarcodeFromImage(_ image: UIImage){
         
@@ -85,30 +98,34 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
             }
         }
     }
+    
+    // MARK: Button Actions
+    @IBAction func addBarcodeImageAction(_ sender: UIButton) {
+        self.present(self.picker, animated: true, completion: nil)
+    }
     @IBAction func addLogoImage(_ sender: UIButton) {
         
     }
     
     @IBAction func addCardAction(_ sender: UIButton) {
     }
-    @objc func changeDate(){
+    @objc func changePrice(){
+        self.getChangedText(priceLabel)
+    }
+    @objc func changePriceSub(){
+        self.getChangedText(priceSubLabel)
+    }
+    @objc func changeProductName(){
      self.getChangedText(productNameLabel)
     }
     @objc func changeContent(){
         self.getChangedText(contentLabel)
     }
-    @objc func changSubContent(){
+    @objc func changeContentTitle(){
         self.getChangedText(contentTitleLabel)
     }
-    func getChangedText(_ label: UILabel){
-        let alert = UIAlertController(title: "수정", message: "수정할 문자열을 입력하세요", preferredStyle: .alert)
-        alert.addTextField { (tf) in
-            tf.placeholder = "문자열 입력"
-        }
-        let okAction = UIAlertAction(title: "확인", style: .default) { (_) in
-            label.text = (alert.textFields?.first?.text!)!
-        }
-        alert.addAction(okAction)
-        self.present(alert,animated: true)
+    
+    @IBAction func closeAction(){
+        self.dismiss(animated: false, completion: nil)
     }
 }
