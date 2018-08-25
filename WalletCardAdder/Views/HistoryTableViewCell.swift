@@ -9,7 +9,12 @@
 import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
-
+    // MARK: IBOutlets
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
+    @IBOutlet weak var expireDateLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

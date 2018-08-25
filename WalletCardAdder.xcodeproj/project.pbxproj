@@ -10,7 +10,6 @@
 		04BCC4BA2131A2EA00ED753D /* AddInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */; };
 		04BCC4BB2131A2EA00ED753D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4AA2131A2E800ED753D /* HistoryViewController.swift */; };
 		04BCC4BC2131A2EA00ED753D /* TrmplateSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4AB2131A2E800ED753D /* TrmplateSelectViewController.xib */; };
-		04BCC4BD2131A2EA00ED753D /* AddInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4AC2131A2E800ED753D /* AddInformationViewController.swift */; };
 		04BCC4BE2131A2EA00ED753D /* GreenCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4AD2131A2E900ED753D /* GreenCardViewController.xib */; };
 		04BCC4BF2131A2EA00ED753D /* TemplateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4AE2131A2E900ED753D /* TemplateCollectionViewCell.swift */; };
 		04BCC4C02131A2EA00ED753D /* TemplateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4AF2131A2E900ED753D /* TemplateCollectionViewCell.xib */; };
@@ -24,6 +23,7 @@
 		04BCC4C82131A2EA00ED753D /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */; };
 		04BCC4C92131A2EA00ED753D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */; };
 		04BCC4CA2131A2EA00ED753D /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4B92131A2EA00ED753D /* Base.lproj */; };
+		04BCC4CC2131C9CC00ED753D /* AddInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */; };
 		23526B3A3C077DE05DAE52D4 /* Pods_WalletCardAdder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */; };
 		6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BD2131CA9800732E61 /* CouponPass.swift */; };
 		6FB013C12131CA9800732E61 /* PassBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB013BE2131CA9800732E61 /* PassBook.swift */; };
@@ -65,23 +65,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddInformationViewController.xib; path = "../../../Downloads/무제 폴더/AddInformationViewController.xib"; sourceTree = "<group>"; };
-		04BCC4AA2131A2E800ED753D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = "../../../Downloads/무제 폴더/HistoryViewController.swift"; sourceTree = "<group>"; };
+		04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddInformationViewController.xib; sourceTree = "<group>"; };
+		04BCC4AA2131A2E800ED753D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		04BCC4AB2131A2E800ED753D /* TrmplateSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrmplateSelectViewController.xib; sourceTree = "<group>"; };
-		04BCC4AC2131A2E800ED753D /* AddInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInformationViewController.swift; path = "../../../Downloads/무제 폴더/AddInformationViewController.swift"; sourceTree = "<group>"; };
 		04BCC4AD2131A2E900ED753D /* GreenCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenCardViewController.xib; sourceTree = "<group>"; };
 		04BCC4AE2131A2E900ED753D /* TemplateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateCollectionViewCell.swift; sourceTree = "<group>"; };
 		04BCC4AF2131A2E900ED753D /* TemplateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateCollectionViewCell.xib; sourceTree = "<group>"; };
 		04BCC4B02131A2E900ED753D /* RedCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedCardViewController.xib; sourceTree = "<group>"; };
-		04BCC4B12131A2E900ED753D /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryViewController.xib; path = "../../../Downloads/무제 폴더/HistoryViewController.xib"; sourceTree = "<group>"; };
+		04BCC4B12131A2E900ED753D /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 		04BCC4B22131A2E900ED753D /* TemplateSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateSelectViewController.xib; sourceTree = "<group>"; };
 		04BCC4B32131A2E900ED753D /* TemplateSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateSelectViewController.swift; sourceTree = "<group>"; };
 		04BCC4B42131A2E900ED753D /* TrmplateSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmplateSelectViewController.swift; sourceTree = "<group>"; };
 		04BCC4B52131A2E900ED753D /* RedCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedCardViewController.swift; sourceTree = "<group>"; };
 		04BCC4B62131A2E900ED753D /* GreenCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenCardViewController.swift; sourceTree = "<group>"; };
-		04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryTableViewCell.xib; path = "../../../Downloads/무제 폴더/HistoryTableViewCell.xib"; sourceTree = "<group>"; };
-		04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryTableViewCell.swift; path = "../../../Downloads/무제 폴더/HistoryTableViewCell.swift"; sourceTree = "<group>"; };
+		04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		04BCC4B92131A2EA00ED753D /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInformationViewController.swift; sourceTree = "<group>"; };
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB013BD2131CA9800732E61 /* CouponPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponPass.swift; sourceTree = "<group>"; };
 		6FB013BE2131CA9800732E61 /* PassBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassBook.swift; sourceTree = "<group>"; };
@@ -389,22 +389,16 @@
 		E30A309721312DF600E91D17 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				04BCC4AC2131A2E800ED753D /* AddInformationViewController.swift */,
 				04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */,
 				04BCC4B92131A2EA00ED753D /* Base.lproj */,
-				04BCC4B62131A2E900ED753D /* GreenCardViewController.swift */,
 				04BCC4AD2131A2E900ED753D /* GreenCardViewController.xib */,
 				04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */,
 				04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */,
 				04BCC4AA2131A2E800ED753D /* HistoryViewController.swift */,
 				04BCC4B12131A2E900ED753D /* HistoryViewController.xib */,
-				04BCC4B52131A2E900ED753D /* RedCardViewController.swift */,
 				04BCC4B02131A2E900ED753D /* RedCardViewController.xib */,
-				04BCC4AE2131A2E900ED753D /* TemplateCollectionViewCell.swift */,
 				04BCC4AF2131A2E900ED753D /* TemplateCollectionViewCell.xib */,
-				04BCC4B32131A2E900ED753D /* TemplateSelectViewController.swift */,
 				04BCC4B22131A2E900ED753D /* TemplateSelectViewController.xib */,
-				04BCC4B42131A2E900ED753D /* TrmplateSelectViewController.swift */,
 				04BCC4AB2131A2E800ED753D /* TrmplateSelectViewController.xib */,
 				DDBA7DFE21317EF90004ED5B /* Main.storyboard */,
 			);
@@ -434,6 +428,12 @@
 		E30A30A121312E0500E91D17 /* Controllsers */ = {
 			isa = PBXGroup;
 			children = (
+				04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */,
+				04BCC4B62131A2E900ED753D /* GreenCardViewController.swift */,
+				04BCC4B52131A2E900ED753D /* RedCardViewController.swift */,
+				04BCC4AE2131A2E900ED753D /* TemplateCollectionViewCell.swift */,
+				04BCC4B32131A2E900ED753D /* TemplateSelectViewController.swift */,
+				04BCC4B42131A2E900ED753D /* TrmplateSelectViewController.swift */,
 				E30A30A221312E2800E91D17 /* MainViewController.swift */,
 			);
 			path = Controllsers;
@@ -459,8 +459,6 @@
 				E30A307E21312D0F00E91D17 /* Sources */,
 				E30A307F21312D0F00E91D17 /* Frameworks */,
 				E30A308021312D0F00E91D17 /* Resources */,
-				978A725C53BC7C90E542B796 /* [CP] Embed Pods Frameworks */,
-				73AD2FEEC7D08EA6165F2CE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -552,36 +550,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		73AD2FEEC7D08EA6165F2CE7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletCardAdder/Pods-WalletCardAdder-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		978A725C53BC7C90E542B796 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletCardAdder/Pods-WalletCardAdder-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -596,7 +564,6 @@
 				6FB013C02131CA9800732E61 /* CouponPass.swift in Sources */,
 				04BCC4BF2131A2EA00ED753D /* TemplateCollectionViewCell.swift in Sources */,
 				DDBA7EA321317FA10004ED5B /* NSString+MIHConversion.m in Sources */,
-				04BCC4BD2131A2EA00ED753D /* AddInformationViewController.swift in Sources */,
 				04BCC4C52131A2EA00ED753D /* TrmplateSelectViewController.swift in Sources */,
 				DDBA7EAB21317FA10004ED5B /* MIHBigInteger+Factory.m in Sources */,
 				DDBA7EAF21317FA10004ED5B /* MIHRSAPrivateKey.m in Sources */,
@@ -622,6 +589,7 @@
 				DDBA7EB221317FA10004ED5B /* MIHRSAKeyFactory.m in Sources */,
 				DDBA7E9F21317FA10004ED5B /* MIHSecureHashAlgorithm384.m in Sources */,
 				DDBA7EB021317FA10004ED5B /* MIHRSAPrivateKey+Internal.m in Sources */,
+				04BCC4CC2131C9CC00ED753D /* AddInformationViewController.swift in Sources */,
 				DDBA7EA821317FA10004ED5B /* MIHDESKeyFactory.m in Sources */,
 				DDBA7EB421317FA10004ED5B /* MIHKeyPair.m in Sources */,
 				DDBA7EA521317FA10004ED5B /* NSData+MIHConversion.m in Sources */,
