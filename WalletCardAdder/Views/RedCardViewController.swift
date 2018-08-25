@@ -9,16 +9,19 @@
 import UIKit
 
 class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-
+    // MARK: IBOutlets
     @IBOutlet weak var barcodeImageView: UIImageView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var cardView: UIView!
-    let picker = UIImagePickerController()
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var gradeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var favoriteLabel: UILabel!
+    
+    // MARK: Internal Variables
+    let picker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
@@ -42,9 +45,7 @@ class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UI
             self.view.layoutIfNeeded()
         }
     }
-    @IBAction func addBarcodeImageAction(_ sender: UIButton) {
-        self.present(self.picker, animated: true, completion: nil)
-    }
+    // MARK: Internal Methods
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
@@ -56,6 +57,17 @@ class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UI
         }
         
         self.getBarcodeFromImage(image)
+    }
+    func getChangedText(_ label: UILabel){
+        let alert = UIAlertController(title: "수정", message: "수정할 문자열을 입력하세요", preferredStyle: .alert)
+        alert.addTextField { (tf) in
+            tf.placeholder = "문자열 입력"
+        }
+        let okAction = UIAlertAction(title: "확인", style: .default) { (_) in
+            label.text = (alert.textFields?.first?.text!)!
+        }
+        alert.addAction(okAction)
+        self.present(alert,animated: true)
     }
     func getBarcodeFromImage(_ image: UIImage){
         
@@ -83,6 +95,10 @@ class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UI
             }
         }
     }
+    // MARK: Button Actions
+    @IBAction func addBarcodeImageAction(_ sender: UIButton) {
+        self.present(self.picker, animated: true, completion: nil)
+    }
     @IBAction func addLogoImage(_ sender: UIButton) {
         
     }
@@ -101,17 +117,7 @@ class RedCardViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @objc func changeGrade(){
         self.getChangedText(gradeLabel)
     }
-    func getChangedText(_ label: UILabel){
-        let alert = UIAlertController(title: "수정", message: "수정할 문자열을 입력하세요", preferredStyle: .alert)
-        alert.addTextField { (tf) in
-            tf.placeholder = "문자열 입력"
-        }
-        let okAction = UIAlertAction(title: "확인", style: .default) { (_) in
-            label.text = (alert.textFields?.first?.text!)!
-        }
-        alert.addAction(okAction)
-        self.present(alert,animated: true)
-    }
+    
     @IBAction func closeAction(){
         self.dismiss(animated: false, completion: nil)
     }

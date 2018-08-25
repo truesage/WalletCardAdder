@@ -9,11 +9,10 @@
 import UIKit
 
 class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    // MARK: IBOutlet
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var logoImageView: UIButton!
-    
     @IBOutlet weak var titleContainerImageView: UIImageView!
-    
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var priceSubLabel: UILabel!
     @IBOutlet weak var titleTextField: UITextField!
@@ -21,8 +20,8 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var barcodeImageView: UIImageView!
-//    @IBOutlet weak var dateLabel: UILabel!
     
+    // MARK: Internal Variable
     let picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +48,7 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
             self.view.layoutIfNeeded()
         }
     }
-    @IBAction func addBarcodeImageAction(_ sender: UIButton) {
-        self.present(self.picker, animated: true, completion: nil)
-    }
+    // MARK: Internal Methods
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
@@ -63,6 +60,17 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
         }
         
         self.getBarcodeFromImage(image)
+    }
+    func getChangedText(_ label: UILabel){
+        let alert = UIAlertController(title: "수정", message: "수정할 문자열을 입력하세요", preferredStyle: .alert)
+        alert.addTextField { (tf) in
+            tf.placeholder = "문자열 입력"
+        }
+        let okAction = UIAlertAction(title: "확인", style: .default) { (_) in
+            label.text = (alert.textFields?.first?.text!)!
+        }
+        alert.addAction(okAction)
+        self.present(alert,animated: true)
     }
     func getBarcodeFromImage(_ image: UIImage){
         
@@ -90,6 +98,11 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
             }
         }
     }
+    
+    // MARK: Button Actions
+    @IBAction func addBarcodeImageAction(_ sender: UIButton) {
+        self.present(self.picker, animated: true, completion: nil)
+    }
     @IBAction func addLogoImage(_ sender: UIButton) {
         
     }
@@ -111,17 +124,7 @@ class GreenCardViewController: UIViewController,UIImagePickerControllerDelegate,
     @objc func changeContentTitle(){
         self.getChangedText(contentTitleLabel)
     }
-    func getChangedText(_ label: UILabel){
-        let alert = UIAlertController(title: "수정", message: "수정할 문자열을 입력하세요", preferredStyle: .alert)
-        alert.addTextField { (tf) in
-            tf.placeholder = "문자열 입력"
-        }
-        let okAction = UIAlertAction(title: "확인", style: .default) { (_) in
-            label.text = (alert.textFields?.first?.text!)!
-        }
-        alert.addAction(okAction)
-        self.present(alert,animated: true)
-    }
+    
     @IBAction func closeAction(){
         self.dismiss(animated: false, completion: nil)
     }
