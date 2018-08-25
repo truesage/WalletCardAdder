@@ -10,7 +10,6 @@
 		04BCC4BA2131A2EA00ED753D /* AddInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */; };
 		04BCC4BB2131A2EA00ED753D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4AA2131A2E800ED753D /* HistoryViewController.swift */; };
 		04BCC4BC2131A2EA00ED753D /* TrmplateSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4AB2131A2E800ED753D /* TrmplateSelectViewController.xib */; };
-		04BCC4BD2131A2EA00ED753D /* AddInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4AC2131A2E800ED753D /* AddInformationViewController.swift */; };
 		04BCC4BE2131A2EA00ED753D /* GreenCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4AD2131A2E900ED753D /* GreenCardViewController.xib */; };
 		04BCC4BF2131A2EA00ED753D /* TemplateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC4AE2131A2E900ED753D /* TemplateCollectionViewCell.swift */; };
 		04BCC4C02131A2EA00ED753D /* TemplateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC4AF2131A2E900ED753D /* TemplateCollectionViewCell.xib */; };
@@ -66,22 +65,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddInformationViewController.xib; path = "../../../Downloads/무제 폴더/AddInformationViewController.xib"; sourceTree = "<group>"; };
-		04BCC4AA2131A2E800ED753D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = "../../../Downloads/무제 폴더/HistoryViewController.swift"; sourceTree = "<group>"; };
+		04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddInformationViewController.xib; sourceTree = "<group>"; };
+		04BCC4AA2131A2E800ED753D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		04BCC4AB2131A2E800ED753D /* TrmplateSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrmplateSelectViewController.xib; sourceTree = "<group>"; };
-		04BCC4AC2131A2E800ED753D /* AddInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInformationViewController.swift; path = "../../../Downloads/무제 폴더/AddInformationViewController.swift"; sourceTree = "<group>"; };
 		04BCC4AD2131A2E900ED753D /* GreenCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenCardViewController.xib; sourceTree = "<group>"; };
 		04BCC4AE2131A2E900ED753D /* TemplateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateCollectionViewCell.swift; sourceTree = "<group>"; };
 		04BCC4AF2131A2E900ED753D /* TemplateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateCollectionViewCell.xib; sourceTree = "<group>"; };
 		04BCC4B02131A2E900ED753D /* RedCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedCardViewController.xib; sourceTree = "<group>"; };
-		04BCC4B12131A2E900ED753D /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryViewController.xib; path = "../../../Downloads/무제 폴더/HistoryViewController.xib"; sourceTree = "<group>"; };
+		04BCC4B12131A2E900ED753D /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 		04BCC4B22131A2E900ED753D /* TemplateSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateSelectViewController.xib; sourceTree = "<group>"; };
 		04BCC4B32131A2E900ED753D /* TemplateSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateSelectViewController.swift; sourceTree = "<group>"; };
 		04BCC4B42131A2E900ED753D /* TrmplateSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmplateSelectViewController.swift; sourceTree = "<group>"; };
 		04BCC4B52131A2E900ED753D /* RedCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedCardViewController.swift; sourceTree = "<group>"; };
 		04BCC4B62131A2E900ED753D /* GreenCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenCardViewController.swift; sourceTree = "<group>"; };
-		04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryTableViewCell.xib; path = "../../../Downloads/무제 폴더/HistoryTableViewCell.xib"; sourceTree = "<group>"; };
-		04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryTableViewCell.swift; path = "../../../Downloads/무제 폴더/HistoryTableViewCell.swift"; sourceTree = "<group>"; };
+		04BCC4B72131A2E900ED753D /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		04BCC4B82131A2E900ED753D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		04BCC4B92131A2EA00ED753D /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		04BCC4CB2131C9CC00ED753D /* AddInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInformationViewController.swift; sourceTree = "<group>"; };
 		1234BE049A1F4050F3B377E7 /* Pods_WalletCardAdder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCardAdder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,7 +389,6 @@
 		E30A309721312DF600E91D17 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				04BCC4AC2131A2E800ED753D /* AddInformationViewController.swift */,
 				04BCC4A92131A2E800ED753D /* AddInformationViewController.xib */,
 				04BCC4B92131A2EA00ED753D /* Base.lproj */,
 				04BCC4AD2131A2E900ED753D /* GreenCardViewController.xib */,
@@ -566,7 +563,6 @@
 				DDBA7EA221317FA10004ED5B /* MIHCryptoConfiguration.m in Sources */,
 				04BCC4BF2131A2EA00ED753D /* TemplateCollectionViewCell.swift in Sources */,
 				DDBA7EA321317FA10004ED5B /* NSString+MIHConversion.m in Sources */,
-				04BCC4BD2131A2EA00ED753D /* AddInformationViewController.swift in Sources */,
 				04BCC4C52131A2EA00ED753D /* TrmplateSelectViewController.swift in Sources */,
 				DDBA7EAB21317FA10004ED5B /* MIHBigInteger+Factory.m in Sources */,
 				DDBA7EAF21317FA10004ED5B /* MIHRSAPrivateKey.m in Sources */,
