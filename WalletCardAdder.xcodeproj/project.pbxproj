@@ -54,6 +54,7 @@
 		DDBA7EB321317FA10004ED5B /* MIHRSAPublicKey+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7E8E21317FA10004ED5B /* MIHRSAPublicKey+Internal.m */; };
 		DDBA7EB421317FA10004ED5B /* MIHKeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7E9621317FA10004ED5B /* MIHKeyPair.m */; };
 		DDBA7EB521317FA10004ED5B /* MIHErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7E9721317FA10004ED5B /* MIHErrors.m */; };
+		DDBA7EBD21319B440004ED5B /* SmimeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7EBC21319B440004ED5B /* SmimeWrapper.m */; };
 		E30A308D21312D0F00E91D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30A308C21312D0F00E91D17 /* Assets.xcassets */; };
 		E30A309021312D0F00E91D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30A308E21312D0F00E91D17 /* LaunchScreen.storyboard */; };
 		E30A309E21312DF700E91D17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30A309A21312DF600E91D17 /* BaseViewController.swift */; };
@@ -145,6 +146,8 @@
 		DDBA7E9A21317FA10004ED5B /* MIHPublicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIHPublicKey.h; sourceTree = "<group>"; };
 		DDBA7E9B21317FA10004ED5B /* MIHKeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIHKeyPair.h; sourceTree = "<group>"; };
 		DDBA7E9C21317FA10004ED5B /* MIHHashAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIHHashAlgorithm.h; sourceTree = "<group>"; };
+		DDBA7EBB21319B440004ED5B /* SmimeWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmimeWrapper.h; sourceTree = "<group>"; };
+		DDBA7EBC21319B440004ED5B /* SmimeWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmimeWrapper.m; sourceTree = "<group>"; };
 		E30A308221312D0F00E91D17 /* WalletCardAdder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletCardAdder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30A308C21312D0F00E91D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30A308F21312D0F00E91D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -351,6 +354,15 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		DDBA7EB921319A960004ED5B /* ObjcWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				DDBA7EBB21319B440004ED5B /* SmimeWrapper.h */,
+				DDBA7EBC21319B440004ED5B /* SmimeWrapper.m */,
+			);
+			path = ObjcWrapper;
+			sourceTree = "<group>";
+		};
 		E30A307921312D0F00E91D17 = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +417,7 @@
 		E30A309821312DF600E91D17 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DDBA7EB921319A960004ED5B /* ObjcWrapper */,
 				DD181C73213158AA00588B59 /* Common */,
 				E30A309921312DF600E91D17 /* Base */,
 				E30A30A121312E0500E91D17 /* Controllsers */,
@@ -576,7 +589,11 @@
 				04BCC4BB2131A2EA00ED753D /* HistoryViewController.swift in Sources */,
 				DDBA7E9D21317FA10004ED5B /* MIHMessageDigest5.m in Sources */,
 				DDBA7EAD21317FA10004ED5B /* MIHBigInteger+Internal.m in Sources */,
+<<<<<<< Updated upstream
 				04BCC4C42131A2EA00ED753D /* TemplateSelectViewController.swift in Sources */,
+=======
+				DDBA7EBD21319B440004ED5B /* SmimeWrapper.m in Sources */,
+>>>>>>> Stashed changes
 				DDBA7EA721317FA10004ED5B /* MIHDESKey.m in Sources */,
 				04BCC4C62131A2EA00ED753D /* RedCardViewController.swift in Sources */,
 				E30A30A321312E2800E91D17 /* MainViewController.swift in Sources */,

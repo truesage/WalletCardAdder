@@ -3,6 +3,6 @@
 //
 
 #import <CommonCrypto/CommonCrypto.h>
-
+#import "SmimeWrapper.h"
 
 
