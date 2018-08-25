@@ -14,6 +14,7 @@
 		E30A309F21312DF700E91D17 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30A309B21312DF600E91D17 /* BaseViewProtocol.swift */; };
 		E30A30A321312E2800E91D17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30A30A221312E2800E91D17 /* MainViewController.swift */; };
 		E30A30A721312F0400E91D17 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30A30A621312F0400E91D17 /* PassKit.framework */; };
+		E30A30AB213139D700E91D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30A30AA213139D700E91D17 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E30A30A221312E2800E91D17 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E30A30A421312F0400E91D17 /* WalletCardAdder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalletCardAdder.entitlements; sourceTree = "<group>"; };
 		E30A30A621312F0400E91D17 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		E30A30AA213139D700E91D17 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				E30A309921312DF600E91D17 /* Base */,
 				E30A30A121312E0500E91D17 /* Controllsers */,
+				E30A30AA213139D700E91D17 /* AppDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30A30AB213139D700E91D17 /* AppDelegate.swift in Sources */,
 				E30A30A321312E2800E91D17 /* MainViewController.swift in Sources */,
 				E30A309E21312DF700E91D17 /* BaseViewController.swift in Sources */,
 				E30A309F21312DF700E91D17 /* BaseViewProtocol.swift in Sources */,
@@ -333,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TUR386524;
 				INFOPLIST_FILE = WalletCardAdder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilefactory.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TUR386524;
 				INFOPLIST_FILE = WalletCardAdder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilefactory.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
