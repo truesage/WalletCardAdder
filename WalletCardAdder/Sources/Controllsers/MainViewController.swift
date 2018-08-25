@@ -33,7 +33,8 @@ class MainViewController: BaseViewController {
      }
      */
     @IBAction func goToHistodyAction(_ sender: Any) {
-        
+        let vc = HistoryViewController.init(nibName: "HistoryViewController", bundle: nil) as! HistoryViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func addCardAction(_ sender: Any) {
