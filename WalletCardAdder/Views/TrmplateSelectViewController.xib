@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrmplateSelectViewController" customModule="WalletCardAdder" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="YRB-ra-ZRd" id="cO2-89-osQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YRB-ra-ZRd">
+                    <rect key="frame" x="56.5" y="120" width="262.5" height="397"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2eV-Ld-9s6">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="99A-DW-zRX"/>
+                        <outlet property="delegate" destination="-1" id="mlC-Tb-4SQ"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJt-8J-Zl5">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbK-mn-SzL">
+                            <rect key="frame" x="147.5" y="55" width="80" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Z4v-5v-hsJ"/>
+                                <constraint firstAttribute="height" constant="40" id="fLV-0H-kRn"/>
+                            </constraints>
+                            <state key="normal" title="Select"/>
+                            <connections>
+                                <action selector="selectTemplate:" destination="-1" eventType="touchUpInside" id="piA-nd-xL6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SbK-mn-SzL" firstAttribute="centerY" secondItem="xJt-8J-Zl5" secondAttribute="centerY" id="kiO-li-uAx"/>
+                        <constraint firstItem="SbK-mn-SzL" firstAttribute="centerX" secondItem="xJt-8J-Zl5" secondAttribute="centerX" id="woM-Mg-ZNu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YRB-ra-ZRd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="DP1-Ld-46l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xJt-8J-Zl5" secondAttribute="trailing" id="PbL-pA-fT9"/>
+                <constraint firstItem="xJt-8J-Zl5" firstAttribute="top" secondItem="YRB-ra-ZRd" secondAttribute="bottom" id="Prh-oC-vzK"/>
+                <constraint firstAttribute="bottom" secondItem="xJt-8J-Zl5" secondAttribute="bottom" id="TJ0-J2-9ol"/>
+                <constraint firstItem="YRB-ra-ZRd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zkp-Cv-G5V"/>
+                <constraint firstItem="xJt-8J-Zl5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mKM-UF-sXV"/>
+                <constraint firstItem="YRB-ra-ZRd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="mcx-1c-0N0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YRB-ra-ZRd" secondAttribute="bottom" constant="150" id="wTU-LU-skw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
